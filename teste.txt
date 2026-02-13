@@ -1,0 +1,10 @@
+
+INICIO
+    lista = [valores da lista]
+    PARA cada i de 0 ate tamanho_da_lista - 1 FACA:
+        PARA cada j de 0 ate tamanho_da_lista - 1 - i FACA:
+            SE lista[j] > lista[j+1] ENTAO:
+                aux ← lista[j]
+                lista[j] ← lista[j+1]
+                lista[j+1] ← aux
+FIM
