@@ -1,18 +1,18 @@
-my_array = [64, 34, 25, 12, 22, 11, 90, 5]
+array = [64, 34, 25, 12, 22, 11, 90, 5]
 
 
 def insertion_sort(arr):
-    n = len(my_array)
+    n = len(array)
 
     for i in range(1, n):
-        insert_index = arr[i]
+        insert_index = array[i]
         j = i - 1
 
-        for j in range(i - 1, -1, -1):
-            if my_array[j] > insert_index:
-                my_array[j + 1] = my_array[j]
+        for j in range(j, -1, -1):
+            if array[j] > insert_index:
+                array[j + 1] = array[j]
             else:
                 break
-        my_array[j + 1] = insert_index
+        array[j + 1] = insert_index
 
-    print("Sorted array:", my_array)
+    print("Sorted array:", array)
