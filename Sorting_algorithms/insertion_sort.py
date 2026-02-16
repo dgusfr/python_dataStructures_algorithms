@@ -11,8 +11,11 @@ def insertion_sort(arr):
         for j in range(j, -1, -1):
             if array[j] > insert_index:
                 array[j + 1] = array[j]
-            else:
-                break
+                j -= 1
+
         array[j + 1] = insert_index
 
-    print("Sorted array:", array)
+    return array
+
+
+print(insertion_sort(array))
