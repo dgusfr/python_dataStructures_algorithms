@@ -4,12 +4,14 @@ array = [12, 8, 9, 3, 11, 5, 4]
 def merge_sort(arr, start=0, end=None):
     if end is None:
         end = len(arr)
-    if start - end > 1:
+    if end - start > 1:
         mid = (start + end) // 2
         merge_sort(arr, start, mid)
         merge_sort(arr, mid, end)
 
-        return merge(arr, start, mid, end)
+        merge(arr, start, mid, end)
+
+        return arr
 
 
 def merge(arr, start, mid, end):
