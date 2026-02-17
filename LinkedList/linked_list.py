@@ -47,6 +47,8 @@ class LinkedList:
             raise IndexError("list index out of range")
         ponteiro = self.head
         for _ in range(index):
+            if ponteiro is None:
+                raise IndexError("list index out of range")
             ponteiro = ponteiro.next
         return ponteiro
 
@@ -70,6 +72,8 @@ class LinkedList:
             self.head = node
         else:
             anterior = self._getnode(index - 1)
+            if anterior is None:
+                raise IndexError("list index out of range")
             node.next = anterior.next
             anterior.next = node
         self._size = self._size + 1
