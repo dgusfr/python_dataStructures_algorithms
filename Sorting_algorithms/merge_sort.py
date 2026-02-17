@@ -1,7 +1,9 @@
 array = [12, 8, 9, 3, 11, 5, 4]
 
 
-def merge_sort(arr, start, end):
+def merge_sort(arr, start=0, end=None):
+    if end is None:
+        end = len(arr)
     if start - end > 1:
         mid = (start + end) // 2
         merge_sort(arr, start, mid)
@@ -27,4 +29,4 @@ def merge(arr, start, mid, end):
             top_right += 1
 
 
-print(merge_sort(array, 0, len(array)))
+print(merge_sort(array))
