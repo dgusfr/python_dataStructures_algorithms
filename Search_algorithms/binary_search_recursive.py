@@ -18,4 +18,4 @@ def binary_search(arr, targetVal, left=0, right=None):
 
 
 result = binary_search(array, value)
-print(f"Index of {value} in the array: {result}")
+print(f"Index of {value} in the array is: {result}")
