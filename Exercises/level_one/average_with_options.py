@@ -13,3 +13,4 @@ if calculate == "w":
         weight1 + weight2 + weight3
     )
     print(f"The weighted average is: {weighted_average}")
+elif calculate == "h":
