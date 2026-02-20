@@ -13,4 +13,13 @@ if calculate == "w":
         weight1 + weight2 + weight3
     )
     print(f"The weighted average is: {weighted_average}")
+
 elif calculate == "h":
+    grade1 = float(input("Enter the first grade: "))
+    grade2 = float(input("Enter the second grade: "))
+    grade3 = float(input("Enter the third grade: "))
+
+    harmonic_average = 3 / (1 / grade1 + 1 / grade2 + 1 / grade3)
+    print(f"The harmonic average is: {harmonic_average}")
+
+else:
