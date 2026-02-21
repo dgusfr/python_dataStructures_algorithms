@@ -9,3 +9,6 @@ def reverse_list(arr):
         arr[i] = arr[n - 1 - i]
         arr[n - 1 - i] = aux
     return arr
+
+
+print(reverse_list(array))
