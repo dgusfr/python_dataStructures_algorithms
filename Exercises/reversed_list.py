@@ -1,7 +1,7 @@
 array = [1, 2, 3, 4, 5]
 
 
-def inverter_lista(arr):
+def reverse_list(arr):
     n = len(arr)
     limit = n // 2
     for i in range(limit):
